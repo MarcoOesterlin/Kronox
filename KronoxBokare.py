@@ -43,13 +43,14 @@ def book10to13Niagara():
                 print("Inga Lediga Tider")
                 driver.close()
                 driver.quit()
-            css(".grupprum-table>tbody:nth-child(1)>tr:nth-child({})>td:nth-child(3)>a:nth-child(1)".format(i)).click()
-            css("#moment").click()
-            css("#moment").send_keys("mm")
-            xpath("/html/body/div[3]/div[11]/div/button[2]").click()
-            print("Success")
-            driver.quit()
-            break
+            else:
+                css(".grupprum-table>tbody:nth-child(1)>tr:nth-child({})>td:nth-child(3)>a:nth-child(1)".format(i)).click()
+                css("#moment").click()
+                css("#moment").send_keys("mm")
+                xpath("/html/body/div[3]/div[11]/div/button[2]").click()
+                print("Success")
+                driver.quit()
+                break
         except ElementNotInteractableException:
             continue
         except NoSuchElementException:
