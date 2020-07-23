@@ -33,10 +33,10 @@ def main():
     name('password').send_keys(password)
     id('login_button').click()
     xpath("/html/body/div[1]/div[2]/div/div/ul/li[9]/a").click()
-    book10to13Niagara()
+    Niagara_10_13()
 
 
-def book10to13Niagara():
+def Niagara_10_13():
     for i in range(2,24):
         try:
             if i == 23:
@@ -46,7 +46,7 @@ def book10to13Niagara():
             else:
                 css(".grupprum-table>tbody:nth-child(1)>tr:nth-child({})>td:nth-child(3)>a:nth-child(1)".format(i)).click()
                 css("#moment").click()
-                css("#moment").send_keys("mm")
+                css("#moment").send_keys(username)
                 xpath("/html/body/div[3]/div[11]/div/button[2]").click()
                 print("Success")
                 driver.quit()
