@@ -21,17 +21,17 @@ def main():
 #Exempel:
 #username = "johndoe"
 #password = "anonymous" 
-    username = "johndoe"
-    password = "anonymous"
+    username = "JohnDoe"
+    password = "Password"
 
 
-    driver.get("https://kronox.mau.se/index.jsp")
+    driver.get("https://schema.mau.se/index.jsp")
     classname('signin').click()
     name('username').send_keys(username)
     name('password').send_keys(password)
     id('login_button').click()
     xpath("/html/body/div[1]/div[2]/div/div/ul/li[9]/a").click()
-    Niagara_10_13()
+    Niagara_10_13(username)
 
 
 def Niagara_10_13(username):
