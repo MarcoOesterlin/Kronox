@@ -17,8 +17,6 @@ id = driver.find_element_by_id
 
 
 def main():
-
-
 #Ersätt Username med ditt datorid, Password med ditt lösenord.
 #Exempel:
 #username = "johndoe"
@@ -27,7 +25,7 @@ def main():
     password = "anonymous"
 
 
-    driver.get("https://kronox.mah.se/index.jsp")
+    driver.get("https://kronox.mau.se/index.jsp")
     classname('signin').click()
     name('username').send_keys(username)
     name('password').send_keys(password)
@@ -36,7 +34,7 @@ def main():
     Niagara_10_13()
 
 
-def Niagara_10_13():
+def Niagara_10_13(username):
     for i in range(2,24):
         try:
             if i == 23:
