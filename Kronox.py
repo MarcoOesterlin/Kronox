@@ -1,4 +1,5 @@
 from selenium import webdriver
+from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import ElementNotInteractableException
@@ -8,7 +9,14 @@ from selenium.common.exceptions import SessionNotCreatedException
 Scriptet måste köras med Mozilla Firefox, och geckodriver inlagd i PATH
 """
 
-driver = webdriver.Firefox()
+
+
+
+
+options = Options()
+driver = webdriver.Firefox(options=options)
+print ("Headless Firefox Initialized")
+options.headless = True
 css = driver.find_element_by_css_selector
 xpath = driver.find_element_by_xpath
 classname = driver.find_element_by_class_name
