@@ -12,7 +12,7 @@ Tool to book a grouproom at Niagara between 10-13.
 - Make sure you have downloaded Python 3, Selenium, Mozilla Firefox.
 - Folder structure should look like this:
 ```
-(folder of a project)
+(folder of the project)
     geckodriver.exe
     Kronox.py
     
