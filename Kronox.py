@@ -25,10 +25,7 @@ id = driver.find_element_by_id
 
 
 def main():
-#Ersätt Username med ditt datorid, Password med ditt lösenord.
-#Exempel:
-#username = "johndoe"
-#password = "anonymous" 
+
     username = "JohnDoe"
     password = "Password"
 
